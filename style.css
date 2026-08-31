@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+  font-family: "Inter", sans-serif;
+}
+body {
+  height: 100vh;
+  background-color: var(--bgColor);
+}
+:root {
+  --bgColor: #f5f7fa;
+  --textColor: #18191f;
+  --brand-primary: #4caf4f;
+  --nutral-grey: #717171;
+}
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.container {
+  max-width: 1300px;
+  padding: 0 8px;
+  margin: 0 auto;
+}
+ul,
+a {
+  text-decoration: none;
+  list-style: none;
+  color: #000;
+}
+.gap {
+  gap: 25px;
+}
+.primary-btn {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 13px;
+  color: #fff;
+  border-radius: 6px;
+  padding: 10px 20px;
+  background: var(--brand-primary);
+  text-align: center;
+}
+/* Root Code End */
+
+.navbar {
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  width: 100%;
+  padding: 0 25px;
+  font-weight: 300;
+  font-size: 15px;
+  color: var(--textColor);
+}
+.navbar .nav-items a:hover {
+  font-weight: 500;
+}
+.navbar .account {
+  align-items: center;
+  font-weight: 600;
+}
+.navbar .login {
+  font-size: 13px;
+  color: var(--brand-primary);
+}
+
+.header-section {
+  align-items: center;
+  justify-content: space-between;
+  height: 599px;
+}
+.header-section h1 {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 119%;
+  color: var(--neutral-d-grey);
+  span {
+    color: var(--brand-primary);
+  }
+}
+.header-text p {
+  font-weight: 400;
+  font-size: 14px;
+  margin: 10px 0;
+  line-height: 150%;
+  color: var(--nutral-grey);
+}
+.header-section .primary-btn {
+    padding: 15px 35px;
+    font-size: 16px;
+}
